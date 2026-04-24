@@ -73,8 +73,8 @@ export default function Home() {
       <header className="sticky top-0 z-50 bg-white shadow-sm">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 flex items-center justify-center flex-shrink-0">
-              <img src="/logo.jpg" alt="MC Global Logo" className="w-full h-full object-contain" />
+            <div className="w-12 h-12 bg-navy-500 rounded-lg flex items-center justify-center flex-shrink-0">
+              <div className="text-white font-bold text-lg">∞</div>
             </div>
             <h1 className="text-xl font-bold text-navy-500">MC Global Insurance</h1>
           </div>
@@ -135,7 +135,7 @@ export default function Home() {
             <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition overflow-hidden">
               <div className="h-48 overflow-hidden bg-gray-200">
                 <img
-                  src="https://images.unsplash.com/photo-1576941089067-2de3dd663645?w=600&h=400&fit=crop"
+                  src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&h=400&fit=crop&q=80"
                   alt="Homeowners insurance"
                   className="w-full h-full object-cover"
                 />
