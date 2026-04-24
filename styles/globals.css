@@ -18,7 +18,7 @@
 
 @layer components {
   .btn-primary {
-    @apply rounded-full bg-navy-500 px-6 py-3 font-semibold text-white shadow-md transition hover:bg-navy-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-navy-500 focus-visible:ring-offset-2;
+    @apply rounded-full bg-navy-500 px-6 py-3 font-semibold text-white shadow-md transition hover:bg-navy-500/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-navy-500 focus-visible:ring-offset-2;
   }
 
   .btn-primary:disabled {
@@ -26,7 +26,7 @@
   }
 
   .btn-hero {
-    @apply rounded-full bg-white px-6 py-3 font-bold text-navy-700 shadow-lg transition hover:bg-navy-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-navy-700;
+    @apply rounded-full bg-white px-6 py-3 font-bold text-navy-700 shadow-lg transition hover:bg-white/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-navy-700;
   }
 
   .input-field {

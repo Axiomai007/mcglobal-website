@@ -183,8 +183,8 @@ export default function Home() {
                     aria-live="polite"
                     className={`mt-4 rounded-xl border px-4 py-3 text-sm font-medium ${
                       submitState.type === 'success'
-                        ? 'border-emerald-200 bg-emerald-50 text-emerald-900'
-                        : 'border-red-200 bg-red-50 text-red-900'
+                        ? 'border-navy-500/30 bg-navy-500/10 text-navy-900'
+                        : 'border-navy-500/30 bg-navy-500/10 text-navy-900'
                     }`}
                   >
                     {submitState.message}
