@@ -47,7 +47,7 @@ export default function Home() {
     <>
       <Head>
         <title>MC Global Insurance | Free Quote | Miami, FL</title>
-        <meta name="description" content="Get a free insurance quote from MC Global Insurance. Licensed Sebanda Insurance agents serving South Florida with homeowners, auto, and commercial insurance." />
+        <meta name="description" content="Get a free insurance quote from MC Global Insurance. Licensed agents serving South Florida with homeowners, auto, and commercial insurance." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="/styles/globals.css" />
       </Head>
@@ -72,14 +72,11 @@ export default function Home() {
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white shadow-sm">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-          <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-navy-500 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-sm">MCG</span>
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 bg-navy-500 rounded-lg flex items-center justify-center">
+              <span className="text-white font-bold text-xs">MC</span>
             </div>
-            <div>
-              <h1 className="text-xl font-bold text-navy-500">MC Global</h1>
-              <p className="text-xs text-gray-600">Sebanda Insurance 73</p>
-            </div>
+            <h1 className="text-xl font-bold text-navy-500">MC Global Insurance</h1>
           </div>
           <a
             href="tel:305-390-8821"
@@ -131,7 +128,7 @@ export default function Home() {
               <div className="h-48 overflow-hidden bg-gray-200">
                 <img
                   src="https://images.unsplash.com/photo-1570129477992-45a003d3f21f?w=600&h=400&fit=crop"
-                  alt="Modern home exterior"
+                  alt="Homeowners insurance"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -152,8 +149,8 @@ export default function Home() {
             <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition overflow-hidden">
               <div className="h-48 overflow-hidden bg-gray-200">
                 <img
-                  src="https://images.unsplash.com/photo-1552519507-da3effff991c?w=600&h=400&fit=crop"
-                  alt="Modern car"
+                  src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=600&h=400&fit=crop"
+                  alt="Auto insurance"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -175,7 +172,7 @@ export default function Home() {
               <div className="h-48 overflow-hidden bg-gray-200">
                 <img
                   src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=400&fit=crop"
-                  alt="Modern office building"
+                  alt="Commercial insurance"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -297,7 +294,13 @@ export default function Home() {
                 "MC Global was incredibly helpful in finding us the right coverage. The agents explained everything clearly and got us set up quickly."
               </p>
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-navy-200"></div>
+                <div className="w-12 h-12 rounded-full overflow-hidden bg-gray-300">
+                  <img
+                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop"
+                    alt="Maria Rodriguez"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
                 <div>
                   <p className="font-semibold text-gray-900">Maria Rodriguez</p>
                   <p className="text-sm text-gray-600">Miami, FL</p>
@@ -317,7 +320,13 @@ export default function Home() {
                 "Best insurance experience I've had. Licensed professionals who actually care about their customers. Highly recommend!"
               </p>
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-navy-200"></div>
+                <div className="w-12 h-12 rounded-full overflow-hidden bg-gray-300">
+                  <img
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop"
+                    alt="Carlos Fernandez"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
                 <div>
                   <p className="font-semibold text-gray-900">Carlos Fernandez</p>
                   <p className="text-sm text-gray-600">Coral Gables, FL</p>
@@ -337,7 +346,13 @@ export default function Home() {
                 "Competitive rates and bilingual support. They took care of everything for our small business. Would use again!"
               </p>
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-navy-200"></div>
+                <div className="w-12 h-12 rounded-full overflow-hidden bg-gray-300">
+                  <img
+                    src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop"
+                    alt="Amanda Chen"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
                 <div>
                   <p className="font-semibold text-gray-900">Amanda Chen</p>
                   <p className="text-sm text-gray-600">South Miami, FL</p>
@@ -384,7 +399,7 @@ export default function Home() {
             <div>
               <h4 className="font-bold mb-4">MC Global Insurance</h4>
               <p className="text-gray-400 text-sm">
-                Sebanda Insurance 73 - Licensed Sebanda Insurance Franchise
+                Licensed insurance agent serving South Florida with professional, honest service.
               </p>
             </div>
             <div>
@@ -410,7 +425,7 @@ export default function Home() {
           </div>
           <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
             <p>
-              &copy; 2026 MC Global Insurance. Sebanda Insurance franchise. All rights reserved.
+              &copy; 2026 MC Global Insurance. All rights reserved.
             </p>
             <p className="mt-2">
               Licensed by Florida Department of Financial Services
