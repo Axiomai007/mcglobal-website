@@ -73,8 +73,8 @@ export default function Home() {
       <header className="sticky top-0 z-50 bg-white shadow-sm">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-navy-500 rounded-lg flex items-center justify-center flex-shrink-0">
-              <img src="https://via.placeholder.com/40" alt="MC Global Logo" className="w-full h-full object-contain p-1" />
+            <div className="w-10 h-10 flex items-center justify-center flex-shrink-0">
+              <img src="/logo.jpg" alt="MC Global Logo" className="w-full h-full object-contain" />
             </div>
             <h1 className="text-xl font-bold text-navy-500">MC Global Insurance</h1>
           </div>
