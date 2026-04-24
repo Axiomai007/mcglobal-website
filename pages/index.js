@@ -73,17 +73,25 @@ export default function Home() {
       <header className="sticky top-0 z-50 bg-white shadow-sm">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-navy-500 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xs">MC</span>
+            <div className="w-10 h-10 bg-navy-500 rounded-lg flex items-center justify-center flex-shrink-0">
+              <img src="https://via.placeholder.com/40" alt="MC Global Logo" className="w-full h-full object-contain p-1" />
             </div>
             <h1 className="text-xl font-bold text-navy-500">MC Global Insurance</h1>
           </div>
-          <a
-            href="tel:305-390-8821"
-            className="hidden sm:flex items-center gap-2 px-4 py-2 bg-navy-500 text-white rounded-lg hover:bg-navy-600 transition font-semibold"
-          >
-            (305) 390-8821
-          </a>
+          <div className="hidden sm:flex items-center gap-4">
+            <a
+              href="mailto:info@mcglobalinsurance.com"
+              className="text-sm text-gray-600 hover:text-navy-500 transition"
+            >
+              info@mcglobalinsurance.com
+            </a>
+            <a
+              href="tel:305-390-8821"
+              className="flex items-center gap-2 px-4 py-2 bg-navy-500 text-white rounded-lg hover:bg-navy-600 transition font-semibold"
+            >
+              (305) 390-8821
+            </a>
+          </div>
         </div>
       </header>
 
@@ -127,7 +135,7 @@ export default function Home() {
             <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition overflow-hidden">
               <div className="h-48 overflow-hidden bg-gray-200">
                 <img
-                  src="https://images.unsplash.com/photo-1570129477992-45a003d3f21f?w=600&h=400&fit=crop"
+                  src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&h=400&fit=crop"
                   alt="Homeowners insurance"
                   className="w-full h-full object-cover"
                 />
@@ -406,6 +414,8 @@ export default function Home() {
               <h4 className="font-bold mb-4">Contact</h4>
               <p className="text-gray-400 text-sm">
                 (305) 390-8821
+                <br />
+                info@mcglobalinsurance.com
                 <br />
                 2665 S Bayshore Dr, Suite 220-29
                 <br />
