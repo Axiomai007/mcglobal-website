@@ -55,8 +55,8 @@ export default function Home() {
       <header className="sticky top-0 z-50 bg-white shadow-sm">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
           <div className="flex items-center gap-3">
-            <div className="w-12 h-12 bg-navy-500 rounded-lg flex items-center justify-center flex-shrink-0">
-              <span className="text-white text-2xl font-light">∞</span>
+            <div className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
+              <img src="/logo.jpg" alt="MC Global Logo" className="w-full h-full object-contain rounded" />
             </div>
             <h1 className="text-lg sm:text-xl font-bold text-navy-500">MC Global Insurance</h1>
           </div>
