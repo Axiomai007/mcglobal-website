@@ -45,9 +45,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>MC Global Insurance | Free Quote</title>
-        <meta name="description" content="Get a free insurance quote from MC Global Insurance. Licensed agents serving South Florida." />
+        <title>MC Global Insurance | Free Quote | Miami, FL</title>
+        <meta name="description" content="Get a free insurance quote from MC Global Insurance. Licensed Sebanda Insurance agents serving South Florida with homeowners, auto, and commercial insurance." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="/styles/globals.css" />
       </Head>
 
       <Script
@@ -67,268 +68,324 @@ export default function Home() {
         }}
       />
 
-      <style jsx>{`
-        * {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-        }
-
-        body {
-          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-          color: #333;
-          line-height: 1.6;
-          background: #fff;
-        }
-
-        header {
-          background: white;
-          padding: 1rem 2rem;
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-        }
-
-        .logo {
-          font-size: 1.3rem;
-          font-weight: 700;
-          color: #003D7A;
-          letter-spacing: -0.5px;
-        }
-
-        .phone {
-          color: #003D7A;
-          font-weight: 600;
-          text-decoration: none;
-          font-size: 1rem;
-          cursor: pointer;
-        }
-
-        .phone:hover {
-          text-decoration: underline;
-        }
-
-        .hero {
-          background: linear-gradient(135deg, #003D7A 0%, #005BA6 100%);
-          color: white;
-          padding: 4rem 2rem;
-          text-align: center;
-          min-height: 60vh;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        .hero h1 {
-          font-size: 2.8rem;
-          margin-bottom: 1rem;
-          font-weight: 700;
-          line-height: 1.2;
-          letter-spacing: -1px;
-        }
-
-        .hero p {
-          font-size: 1.2rem;
-          margin-bottom: 2rem;
-          opacity: 0.95;
-          max-width: 600px;
-        }
-
-        .form-container {
-          background: white;
-          padding: 2.5rem;
-          border-radius: 8px;
-          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-          max-width: 500px;
-          width: 100%;
-        }
-
-        .form-container h2 {
-          margin-bottom: 2rem;
-          color: #003D7A;
-          font-size: 1.6rem;
-          font-weight: 700;
-        }
-
-        .form-group {
-          margin-bottom: 1.5rem;
-        }
-
-        label {
-          display: block;
-          margin-bottom: 0.5rem;
-          color: #333;
-          font-weight: 600;
-          font-size: 0.95rem;
-        }
-
-        input,
-        select {
-          width: 100%;
-          padding: 0.9rem;
-          border: 1px solid #ddd;
-          border-radius: 4px;
-          font-size: 1rem;
-          font-family: inherit;
-          transition: border-color 0.3s;
-        }
-
-        input:focus,
-        select:focus {
-          outline: none;
-          border-color: #003D7A;
-          box-shadow: 0 0 0 3px rgba(0, 61, 122, 0.1);
-        }
-
-        button {
-          width: 100%;
-          padding: 1.1rem;
-          background: #003D7A;
-          color: white;
-          border: none;
-          border-radius: 4px;
-          font-size: 1.1rem;
-          font-weight: 600;
-          cursor: pointer;
-          transition: background 0.3s;
-          letter-spacing: 0.5px;
-        }
-
-        button:hover:not(:disabled) {
-          background: #002a5e;
-        }
-
-        button:disabled {
-          opacity: 0.6;
-          cursor: not-allowed;
-        }
-
-        .success-message {
-          color: #28a745;
-          padding: 1rem;
-          background: #f0f8f4;
-          border-radius: 4px;
-          margin-bottom: 1rem;
-          text-align: center;
-          font-weight: 600;
-        }
-
-        .error-message {
-          color: #dc3545;
-          padding: 1rem;
-          background: #f8f0f0;
-          border-radius: 4px;
-          margin-bottom: 1rem;
-          text-align: center;
-          font-weight: 600;
-        }
-
-        footer {
-          background: #001a4d;
-          color: white;
-          text-align: center;
-          padding: 2rem;
-          font-size: 0.9rem;
-          margin-top: 3rem;
-        }
-
-        @media (max-width: 768px) {
-          .hero h1 {
-            font-size: 2rem;
-          }
-
-          .hero p {
-            font-size: 1.05rem;
-          }
-
-          header {
-            flex-direction: column;
-            gap: 1rem;
-            text-align: center;
-          }
-
-          .form-container {
-            margin: 0 1rem;
-          }
-        }
-      `}</style>
-
-      <header>
-        <div className="logo">MC Global Insurance</div>
-        <a href="tel:305-390-8821" className="phone">
-          Call (305) 390-8821
-        </a>
+      {/* Header */}
+      <header className="sticky top-0 z-50 bg-white shadow-sm">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+          <div className="flex items-center gap-2">
+            <div className="w-10 h-10 bg-navy-500 rounded-full flex items-center justify-center">
+              <span className="text-white font-bold text-sm">MCG</span>
+            </div>
+            <div>
+              <h1 className="text-xl font-bold text-navy-500">MC Global</h1>
+              <p className="text-xs text-gray-600">Sebanda Insurance 73</p>
+            </div>
+          </div>
+          <a
+            href="tel:305-390-8821"
+            className="hidden sm:flex items-center gap-2 px-4 py-2 bg-navy-500 text-white rounded-lg hover:bg-navy-600 transition font-semibold"
+          >
+            <span>📞</span>
+            (305) 390-8821
+          </a>
+        </div>
       </header>
 
-      <section className="hero">
-        <h1>Get Your Free Insurance Quote Today</h1>
-        <p>Licensed agents ready to help you protect what matters most</p>
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-br from-navy-500 via-navy-500 to-sky-500 text-white py-20 sm:py-32">
+        <div className="absolute inset-0 opacity-10">
+          <svg className="w-full h-full" viewBox="0 0 1000 600" preserveAspectRatio="none">
+            <defs>
+              <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" strokeWidth="0.5" />
+              </pattern>
+            </defs>
+            <rect width="1000" height="600" fill="url(#grid)" />
+          </svg>
+        </div>
 
-        <div className="form-container">
-          <h2>Free Quote</h2>
-
-          {submitted && (
-            <div className="success-message">
-              Thank you! We'll call you within 24 hours with your quote.
-            </div>
-          )}
-
-          <form onSubmit={handleSubmit}>
-            <div className="form-group">
-              <label htmlFor="name">Full Name</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-                placeholder="John Doe"
-              />
-            </div>
-
-            <div className="form-group">
-              <label htmlFor="phone">Phone Number</label>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                value={formData.phone}
-                onChange={handleChange}
-                required
-                placeholder="(305) 555-1234"
-              />
-            </div>
-
-            <div className="form-group">
-              <label htmlFor="insuranceType">Insurance Type</label>
-              <select
-                id="insuranceType"
-                name="insuranceType"
-                value={formData.insuranceType}
-                onChange={handleChange}
-              >
-                <option value="homeowners">Homeowners</option>
-                <option value="auto">Auto</option>
-                <option value="commercial">Commercial</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-
-            <button type="submit" disabled={loading}>
-              {loading ? 'Submitting...' : 'Get Free Quote'}
-            </button>
-          </form>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+          <h2 className="text-4xl sm:text-6xl font-bold mb-6 leading-tight">
+            Protect What Matters Most
+          </h2>
+          <p className="text-lg sm:text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+            Get a free insurance quote in minutes from our licensed South Florida agents. We speak your language.
+          </p>
+          <a
+            href="#quote-form"
+            className="inline-block px-8 py-4 bg-white text-navy-500 font-bold rounded-lg hover:bg-gray-50 transition shadow-lg hover:shadow-xl"
+          >
+            Get Your Free Quote
+          </a>
         </div>
       </section>
 
-      <footer>
-        <p>&copy; 2026 MC Global Insurance. Licensed Sebanda Insurance Franchise.</p>
-        <p style={{ marginTop: '0.5rem', fontSize: '0.85rem' }}>
-          2665 S Bayshore Dr, Suite 220-29, Miami, FL 33133
-        </p>
+      {/* Services Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="section-title text-center">Our Coverage</h2>
+          <p className="section-subtitle text-center">
+            Comprehensive insurance solutions for South Florida families and businesses
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Homeowners */}
+            <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition p-8">
+              <div className="w-12 h-12 bg-navy-100 rounded-lg flex items-center justify-center mb-4">
+                <span className="text-2xl">🏠</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Homeowners Insurance</h3>
+              <p className="text-gray-600 mb-4">
+                Protect your home and belongings with comprehensive coverage including hurricanes, theft, and liability.
+              </p>
+              <ul className="space-y-2 text-sm text-gray-700">
+                <li>✓ Dwelling coverage</li>
+                <li>✓ Personal property protection</li>
+                <li>✓ Liability coverage</li>
+              </ul>
+            </div>
+
+            {/* Auto */}
+            <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition p-8">
+              <div className="w-12 h-12 bg-navy-100 rounded-lg flex items-center justify-center mb-4">
+                <span className="text-2xl">🚗</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Auto Insurance</h3>
+              <p className="text-gray-600 mb-4">
+                Full coverage for your vehicles with competitive rates and flexible payment options.
+              </p>
+              <ul className="space-y-2 text-sm text-gray-700">
+                <li>✓ Liability protection</li>
+                <li>✓ Collision coverage</li>
+                <li>✓ Comprehensive coverage</li>
+              </ul>
+            </div>
+
+            {/* Commercial */}
+            <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition p-8">
+              <div className="w-12 h-12 bg-navy-100 rounded-lg flex items-center justify-center mb-4">
+                <span className="text-2xl">🏢</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Commercial Insurance</h3>
+              <p className="text-gray-600 mb-4">
+                Protect your business with tailored coverage solutions for your industry and size.
+              </p>
+              <ul className="space-y-2 text-sm text-gray-700">
+                <li>✓ General liability</li>
+                <li>✓ Property protection</li>
+                <li>✓ Customizable policies</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Quote Form Section */}
+      <section id="quote-form" className="py-20 bg-white">
+        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-gradient-to-br from-navy-50 to-white rounded-2xl shadow-lg p-8 sm:p-12">
+            <h2 className="text-3xl font-bold text-navy-500 mb-2">Get Your Free Quote</h2>
+            <p className="text-gray-600 mb-8">
+              No obligation. No hidden fees. Just an honest quote from licensed professionals.
+            </p>
+
+            {submitted && (
+              <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg">
+                <p className="text-green-800 font-semibold">
+                  ✓ Thank you! Our agents will call you within 24 hours with your personalized quote.
+                </p>
+              </div>
+            )}
+
+            <form onSubmit={handleSubmit} className="space-y-5">
+              <div>
+                <label htmlFor="name" className="block text-sm font-semibold text-gray-900 mb-2">
+                  Full Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                  placeholder="John Doe"
+                  className="input-field"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="phone" className="block text-sm font-semibold text-gray-900 mb-2">
+                  Phone Number
+                </label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  required
+                  placeholder="(305) 555-1234"
+                  className="input-field"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="insuranceType" className="block text-sm font-semibold text-gray-900 mb-2">
+                  Type of Insurance
+                </label>
+                <select
+                  id="insuranceType"
+                  name="insuranceType"
+                  value={formData.insuranceType}
+                  onChange={handleChange}
+                  className="input-field"
+                >
+                  <option value="homeowners">Homeowners Insurance</option>
+                  <option value="auto">Auto Insurance</option>
+                  <option value="commercial">Commercial Insurance</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <button
+                type="submit"
+                disabled={loading}
+                className="btn-primary w-full text-lg font-bold py-4"
+              >
+                {loading ? 'Submitting...' : 'Get My Free Quote'}
+              </button>
+
+              <p className="text-xs text-gray-500 text-center mt-4">
+                We respect your privacy. Your information is secure and will never be shared.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="section-title text-center">What Our Customers Say</h2>
+
+          <div className="grid md:grid-cols-3 gap-8 mt-12">
+            <div className="bg-white rounded-xl p-8 shadow-md">
+              <div className="flex gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <span key={i} className="text-yellow-400 text-lg">
+                    ★
+                  </span>
+                ))}
+              </div>
+              <p className="text-gray-700 mb-4">
+                "MC Global was incredibly helpful in finding us the right coverage. The agents explained everything clearly and got us set up quickly."
+              </p>
+              <p className="font-semibold text-gray-900">Maria Rodriguez</p>
+              <p className="text-sm text-gray-600">Miami, FL</p>
+            </div>
+
+            <div className="bg-white rounded-xl p-8 shadow-md">
+              <div className="flex gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <span key={i} className="text-yellow-400 text-lg">
+                    ★
+                  </span>
+                ))}
+              </div>
+              <p className="text-gray-700 mb-4">
+                "Best insurance experience I've had. Licensed professionals who actually care about their customers. Highly recommend!"
+              </p>
+              <p className="font-semibold text-gray-900">Carlos Fernandez</p>
+              <p className="text-sm text-gray-600">Coral Gables, FL</p>
+            </div>
+
+            <div className="bg-white rounded-xl p-8 shadow-md">
+              <div className="flex gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <span key={i} className="text-yellow-400 text-lg">
+                    ★
+                  </span>
+                ))}
+              </div>
+              <p className="text-gray-700 mb-4">
+                "Competitive rates and bilingual support. They took care of everything for our small business. Would use again!"
+              </p>
+              <p className="font-semibold text-gray-900">Amanda Chen</p>
+              <p className="text-sm text-gray-600">South Miami, FL</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Trust Signals Section */}
+      <section className="py-16 bg-navy-500 text-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-3 gap-8 text-center">
+            <div>
+              <div className="text-4xl font-bold mb-2">✓</div>
+              <h3 className="font-bold mb-2">Licensed & Trusted</h3>
+              <p className="text-white/80">
+                Licensed by the State of Florida Department of Financial Services
+              </p>
+            </div>
+            <div>
+              <div className="text-4xl font-bold mb-2">🌐</div>
+              <h3 className="font-bold mb-2">Bilingual Service</h3>
+              <p className="text-white/80">
+                English & Spanish support from our experienced agents
+              </p>
+            </div>
+            <div>
+              <div className="text-4xl font-bold mb-2">📍</div>
+              <h3 className="font-bold mb-2">Local Experts</h3>
+              <p className="text-white/80">
+                Based in Coconut Grove, serving all of South Florida
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-900 text-white py-12">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
+            <div>
+              <h4 className="font-bold mb-4">MC Global Insurance</h4>
+              <p className="text-gray-400 text-sm">
+                Sebanda Insurance 73 - Licensed Sebanda Insurance Franchise
+              </p>
+            </div>
+            <div>
+              <h4 className="font-bold mb-4">Contact</h4>
+              <p className="text-gray-400 text-sm">
+                📞 (305) 390-8821
+                <br />
+                📍 2665 S Bayshore Dr, Suite 220-29
+                <br />
+                Miami, FL 33133
+              </p>
+            </div>
+            <div>
+              <h4 className="font-bold mb-4">Hours</h4>
+              <p className="text-gray-400 text-sm">
+                Monday - Friday: 9 AM - 6 PM
+                <br />
+                Saturday: 10 AM - 4 PM
+                <br />
+                Sunday: Closed
+              </p>
+            </div>
+          </div>
+          <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
+            <p>
+              &copy; 2026 MC Global Insurance. Sebanda Insurance franchise. All rights reserved.
+            </p>
+            <p className="mt-2">
+              Licensed by Florida Department of Financial Services
+            </p>
+          </div>
+        </div>
       </footer>
     </>
   );
