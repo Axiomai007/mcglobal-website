@@ -135,7 +135,7 @@ export default function Home() {
             <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition overflow-hidden">
               <div className="h-48 overflow-hidden bg-gray-200">
                 <img
-                  src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&h=400&fit=crop"
+                  src="https://images.unsplash.com/photo-1576941089067-2de3dd663645?w=600&h=400&fit=crop"
                   alt="Homeowners insurance"
                   className="w-full h-full object-cover"
                 />
