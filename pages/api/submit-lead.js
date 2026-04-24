@@ -5,9 +5,9 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const { name, phone, insuranceType } = req.body;
+  const { fullName, phone, email, address, insuranceType } = req.body;
 
-  if (!name || !phone) {
+  if (!fullName || !phone || !email || !insuranceType) {
     return res.status(400).json({ error: 'Missing required fields' });
   }
 
@@ -25,11 +25,13 @@ export default async function handler(req, res) {
     const mailOptions = {
       from: process.env.GMAIL_USER,
       to: 'michaelr@sebandainsurance.com', // MC Global email
-      subject: `New Lead: ${name}`,
+      subject: `New Lead: ${fullName}`,
       html: `
         <h2>New Insurance Quote Request</h2>
-        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Full Name:</strong> ${fullName}</p>
         <p><strong>Phone:</strong> ${phone}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Address:</strong> ${address || 'Not provided'}</p>
         <p><strong>Insurance Type:</strong> ${insuranceType}</p>
         <p><strong>Received:</strong> ${new Date().toLocaleString()}</p>
         <p>Reply to this lead as soon as possible!</p>
