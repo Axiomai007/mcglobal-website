@@ -59,10 +59,14 @@ export default function Home() {
     setSubmitState({ type: '', message: '' });
 
     try {
-      const response = await fetch('/api/submit-lead', {
+      const response = await fetch('https://formspree.io/f/mvgoovva', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          name: formData.name,
+          phone: formData.phone,
+          insuranceType: formData.insuranceType,
+        }),
       });
 
       if (!response.ok) {
