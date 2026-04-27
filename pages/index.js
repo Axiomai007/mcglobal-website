@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import { useState } from 'react';
+import { useRouter } from 'next/router';
 
 const insuranceOptions = [
   { value: 'homeowners', label: 'Homeowners Insurance' },
@@ -38,6 +39,7 @@ const coverageCards = [
 ];
 
 export default function Home() {
+  const router = useRouter();
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -70,9 +72,14 @@ export default function Home() {
       setSubmitState({
         type: 'success',
         message:
-          'Quote request received. An MC Global agent will contact you soon.',
+          'Quote request received. Redirecting...',
       });
       setFormData({ name: '', phone: '', insuranceType: 'homeowners' });
+      
+      // Redirect to thank-you page after 1 second
+      setTimeout(() => {
+        router.push('/thank-you');
+      }, 1000);
     } catch (error) {
       console.error('Lead submission error:', error);
       setSubmitState({

@@ -20,6 +20,9 @@ function MyApp({ Component, pageProps }) {
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', '${GOOGLE_ADS_ID}');
+            gtag('config', 'AW-18051931803/5onPCOLWoqMcEJu96p9D', {
+              'phone_conversion_number': '(305) 390-8821'
+            });
           `,
         }}
       />
